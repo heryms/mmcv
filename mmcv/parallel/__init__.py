@@ -1,10 +1,10 @@
-from .collate import collate
+from .collate import collate, collate_for_3dvision
 from .data_container import DataContainer
 from .data_parallel import MMDataParallel
 from .distributed import MMDistributedDataParallel
 from .scatter_gather import scatter, scatter_kwargs
 
 __all__ = [
-    'collate', 'DataContainer', 'MMDataParallel', 'MMDistributedDataParallel',
+    'collate', 'collate_for_3dvision', 'DataContainer', 'MMDataParallel', 'MMDistributedDataParallel',
     'scatter', 'scatter_kwargs'
 ]
